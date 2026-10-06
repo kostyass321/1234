@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "Введите ваше имя: " user_name
+
+echo "Привет, $user_name! Рад тебя видеть."

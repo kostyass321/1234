@@ -28,3 +28,44 @@ read name
 echo "Привет, $name! Добро пожаловать в bash-скриптинг"
 
 #!/bin/bash - шибэнг для ОС
+
+```bash
+#!/bin/bash
+
+read -p "Введите имя файла: " filename
+
+if [ -f "$filename" ]; then
+    echo "Файл '$filename' существует."
+else
+    echo "Файл '$filename' не найден (или это не обычный файл)."
+fi
+```
+
+* ***Набор Bash-скриптов, выполненных в рамках учебного задания.**
+
+## Содержание
+
+В проект входят следующие скрипты:
+
+| Файл | Назначение |
+|---|---|
+| `hello.sh` | Запрашивает имя пользователя и выводит приветствие |
+| `calculator.sh` | Складывает два введённых числа |
+| `evennum.sh` | Проверяет число на чётность |
+| `projectstr.sh` | Создаёт структуру веб-проекта |
+| `linecount.sh` | Подсчитывает количество строк в файле |
+| `passwordgen.sh` | Генерирует случайный пароль длиной 8 символов |
+| `searchfiles.sh` | Ищет файлы указанного расширения |
+
+## Запуск
+
+Скрипты запускаются в Git Bash:
+
+```bash
+- sh hello.sh
+- sh calculator.sh
+- sh evennum.sh
+- sh projectstr.sh
+- sh linecount.sh
+- sh passwordgen.sh
+- sh searchfiles.sh
